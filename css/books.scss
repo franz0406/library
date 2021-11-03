@@ -1,0 +1,180 @@
+@import '_common';
+
+.contents-m{ // 검색 탭 메뉴
+    margin-top: 35px;
+    >.srch-tap-menu >ul{ // 제목 리스트
+        display: flex;
+        margin-bottom: 30px;
+        >li{
+            flex-basis: 50%;
+            text-align: center;
+            >a{
+                display: block;
+                font-size:$font20;
+                line-height: 60px;
+                color:$darkGray;
+                background: $lightGray;
+                border-bottom: 1px solid $blue;
+            }
+            &.active >a{
+                font-weight: 700;
+                color:$blue;
+                background: $white;
+                @include border($blue);
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+    .srch-taps{ // 탭 메뉴
+        display: none;
+        @include border($gray);
+        &.active{
+            display: block;
+        }        
+        &:first-of-type{ // 일반검색 탭
+            width:100%;
+            color:$darkGray;
+            padding:30px 0;
+            >form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >label{
+                    margin-right: 45px;
+                    font-size: $font20;
+                    font-weight: 500;
+                }
+                >select{
+                    margin-right: 15px;
+                    padding:0 10px;
+                    width:140px;
+                    height:38px;
+                    font-size: $font12;
+                    color:$gray;
+                    outline: none;
+                    border-color: $gray;
+                    background: url(../imgs/common/sort_down.png)no-repeat 94% 50%;
+                    appearance: none;
+                }
+                >input{                    
+                    padding-left: 10px;
+                    width:282px;
+                    height:38px;
+                    outline-color: $skyBlue;                    
+                    &::placeholder{
+                        font-size: $font12;
+                        color:$gray;
+                    }
+                }
+                >button{
+                    margin-left: -30px;
+                    background:$white;
+                    border:0 none;
+                    outline: none;
+                    cursor: pointer;
+                    >i{
+                        color:$skyBlue;
+                    }
+                }
+            }           
+        }
+        &:last-of-type{ // 상세검색 탭
+            padding:40px 60px;
+            font-weight: 500;
+            color:$darkGray;
+            p{
+                margin-bottom: 15px;
+                &:last-of-type{
+                    margin-bottom: 40px;
+                }
+                label{
+                    margin-right: 10px;
+                    display: inline-block;
+                    width:60px;
+                }
+                input{
+                    &:first-of-type{
+                        margin-right: 40px;
+                    }
+                    width:323px;
+                    height:34px;
+                }
+                >select{
+                    padding:0 10px;
+                    width:323px;
+                    height:34px;
+                    font-size: $font14;
+                    color:$gray;
+                    outline: none;
+                    border-color: $gray;
+                    background: url(../imgs/common/sort_down.png)no-repeat 94% 50%;
+                    appearance: none;
+                }
+                &:nth-of-type(4){
+                    input{ // 발행년도 
+                        margin-right: 0;
+                        width:153px;
+                        &:last-of-type{
+                            margin-right: 40px;
+                        }
+                    }
+                }
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+                width:120px;
+                font-size: $font16;
+                font-weight: 700;
+                line-height: 35px;
+                color:$white;
+                border:0 none;
+                background: $skyBlue;
+                cursor: pointer;
+            }
+        }
+    }
+    >.srch-tap-menu >p{ // 검색 안내 문구
+        margin-top: 65px;
+        margin-bottom: 30px;
+        font-size:$font14;
+        line-height:22px;
+        color:$darkGray;
+    }
+    table{ // 이용안내
+        width:100%;
+        border-top: 2px solid $blue;
+        border-bottom: 1px solid $blue;
+        color:$darkGray;
+        font-size:$font14;
+        th{
+            line-height: 30px;
+            font-weight: 700;
+            background: $lightGray;
+        }
+        td{
+            display: flex;
+            align-items: center;
+            height:57px;
+            &:first-of-type{
+                border-bottom: 2px solid $lightGray;
+            }
+            >span:first-of-type{
+                margin: 0 110px;
+                display: block;
+                width:100px;
+                line-height:30px;
+                color:$skyBlue;
+                text-align: center;
+                @include border($skyBlue);
+            }
+            >span:last-of-type{
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+main{
+    margin-bottom: 230px;
+}

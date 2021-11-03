@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/books.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>국립중앙도서관</title>
+</head>
+<body>
+    <!-- 본문 바로가기 링크 -->
+    <a href="#main_contents" class="skip">본문 바로가기</a>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1 class="hidden">문화체육관광부 국립중앙도서관</h1>
+        <!-- 헤더 상단 -->
+        <div class="hd-top">
+            <div class="center">
+                <a href="../index.html"><img src="../imgs/index/Logo/Logo.png" alt="국립중앙도서관 로고 이미지"></a>
+                <div>
+                    <!-- 상단 유팅메뉴 -->
+                    <dl>
+                        <dt class="hidden">상단 유틸메뉴</dt>
+                        <dd><a href="#"><i class="fas fa-home"></i>처음으로</a></dd>
+                        <dd><a href="#"><i class="fas fa-sign-in-alt"></i>로그인</a></dd>
+                        <dd><a href="#" target="_blank" title="새창열림 - 회원가입서비스"><i class="fas fa-user"></i>회원가입</a></dd>
+                        <dd><a href="#"><i class="fas fa-sitemap"></i>사이트맵</a></dd>
+                    </dl>
+                    <!-- 상단 검색 영역 -->
+                    <form action="#">
+                        <label for="h-srch" class="hidden">검색어를입력하세요</label>
+                        <input type="text" id="h-srch" name="h-srch" placeholder="검색어를 입력하세요">
+                        <button type="button"><i class="fas fa-search"></i><span class="hidden">검색하기</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 헤더 하단 -->
+        <div class="hd-bottom">
+            <!-- gnb -->
+            <nav class="center">
+                <h2 class="hidden">국립중앙도서관 메인메뉴</h2>
+                <div></div>
+                <ul class="gnb_depth1">
+                    <li>
+                        <a href="../html/about.html">도서관소개</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">도서관연헉</a></li>
+                            <li><a href="#">시설현황</a></li>
+                            <li><a href="#">도서관조직도</a></li>
+                            <li><a href="#">이용서비스헌장</a></li>
+                            <li><a href="#">도서관규정</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/use.html">도서관이용</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">집에서 이용하는 도서관</a></li>
+                            <li><a href="#">본관 자료실안내</a></li>
+                            <li><a href="#">디지털 도서관안내</a></li>
+                            <li><a href="#">대출증 발급안내</a></li>
+                            <li><a href="#">편의시설</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/user.html">이용자마당</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">설문조사</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">영상뉴스</a></li>
+                            <li><a href="#">건의사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/books.html">도서정보</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자료검색</a></li>
+                            <li><a href="#">사서 추천도서</a></li>
+                            <li><a href="#">신착자료</a></li>
+                            <li><a href="#">영상자료</a></li>
+                            <li><a href="#">국가자료종합목록</a></li>
+                            <li><a href="#">국가전자도서관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/events.html">신청·참여</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">책다모아(기증)</a></li>
+                            <li><a href="#">자료신청안내</a></li>
+                            <li><a href="#">도서관견학</a></li>
+                            <li><a href="#">도서관예약</a></li>
+                            <li><a href="#">교육/문화프로그램</a></li>
+                            <li><a href="#">사회봉사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="depth2_bg"></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main id="main_contents">
+        <h2 class="hidden">도서관이용 메인 콘텐츠</h2>
+        <!-- 메인 상단 콘텐츠 제목 영역 -->
+        <div class="main-header">
+            <img src="../imgs/common/library_text.png" alt="국립중앙도서관 대한민국 지식을 모으고,담고,잇다">
+            <div>
+                <div class="center">
+                    <h3>도서관이용</h3>
+                    <img src="../imgs/common/share_icon.png" alt="공유아이콘">
+                    <img src="../imgs/common/print_icon.png" alt="프린터아이콘">
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <section class="contents center">
+            <h2 class="hidden">도서정보 콘탠츠</h2>
+            <!-- 로컬 네비게이터 -->
+            <nav class="lnb">
+                <h3>도서정보</h3>
+                <ul>
+                    <li class="active"><a href="#">자료검색</a></li>
+                    <li><a href="#">사서추천도서</a></li>
+                    <li><a href="#">신착자료</a></li>
+                    <li><a href="#">영상자료</a></li>
+                    <li><a href="#">국가자료종합목록</a></li>
+                    <li><a href="#">국가전자도서관</a></li>
+                </ul>
+            </nav>
+            <!-- 컨텐츠 내용 영역 -->
+            <div>
+                <!-- 컨텐츠 내용 헤더 -->
+                <div class="contents-h">
+                    <h4>자료검색</h4>
+                    <span><a href="#"><i class="fas fa-home"></i></a> &gt; 도서정보 &gt; 자료검색</span>
+                </div>
+                <!-- 내용 -->
+                <div class="contents-m">
+                    <div class="srch-tap-menu">
+                        <!-- 탭 제목 리스트 -->
+                        <ul>
+                            <li class="active"><a href="#">일반검색</a></li>
+                            <li><a href="#">상세검색</a></li>
+                        </ul>
+                        <!-- 일반검색 탭 1 -->
+                        <div class="srch-taps active">
+                            <form action="#">
+                                <label for="selec">소장자료</label>
+                                <select name="selec" id="selec" title="검색방식 선택">
+                                    <option value="0">전체</option>
+                                    <option value="1">제목</option>
+                                    <option value="2">내용</option>
+                                </select>
+                                <label for="srch" class="hidden">검색</label>
+                                <input type="text" name="srch" id="srch" placeholder="검색어를 입력해주세요.">
+                                <button type="button"><i class="fas fa-search"></i><span class="hidden">검색버튼</span></button>
+                            </form>
+                        </div>
+                        <!-- 상세검색 탭 2 -->
+                        <div class="srch-taps">
+                            <form action="#">
+                                <p>
+                                    <label for="tit">제목</label>
+                                    <input type="text" name="tit" id="tit">
+                                    <label for="category">주제</label>
+                                    <input type="text" name="category" id="category">
+                                </p>
+                                <p>
+                                    <label for="author">저자</label>
+                                    <input type="text" name="author" id="author">
+                                    <label for="keyword">키워드</label>
+                                    <input type="text" name="keyword" id="keyword">
+                                </p>
+                                <p>
+                                    <label for="publish">발행처</label>
+                                    <input type="text" name="publish" id="publish">
+                                    <label for="stcode">표준부호</label>
+                                    <select name="stcode" id="stcode">
+                                        <option value="ISBN">ISBN</option>
+                                        <option value="ISSN">ISSN</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label>발행년도</label>
+                                    <input type="number">
+                                    <span>~</span>
+                                    <input type="number">
+                                    <label for="divcode">분류기호</label>
+                                    <select name="divcode" id="divcode">
+                                        <option value="0">한국십진분류표</option>
+                                        <option value="1">듀이십진분류표</option>
+                                        <option value="2">정부문서분류번호</option>
+                                    </select>
+                                </p>
+                                <button type="submit">검색하기</button>
+                            </form>
+                        </div>
+                        <p>
+                            국립중앙도서관에서 소장하고 있는 국내외 자료를 통합검색할 수 있습니다.<br>
+                            검색 대상 항목은 도서, 고서, 학위논문, 잡지/학술지, 신문 기사, 멀티미디어, 장애인자료, 외부연계자료, 웹사이트 수집, 기타, 해외한국관련기록물 등이 있습니다.
+                        </p>
+                        <h5>이용안내</h5>
+                        <!-- 하단 테이블 -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span><a href="#">목차정보</a></span>
+                                        <span>
+                                            검색된 자료의 목차자료가 구축되어 있으면 목차정보 탭이 나타납니다.<br>
+                                            목차정보 탭을 클릭하면 해당 자료의 목차 내용을 볼 수 있습니다.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span><a href="#">초록정보</a></span>
+                                        <span>
+                                            검색된 자료의 초록자료가 구축되어 있으면 간략목록 페이지에 초록 버튼이 나타납니다.<br>
+                                            초록정보 버튼을 클릭하면 내용을 볼 수 있습니다.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 역역 -->
+    <footer>
+        <h2 class="hidden">국립중앙도서관 하단 푸터 콘탠츠</h2>
+        <!-- 푸터 상단 -->
+        <div class="f-top">
+            <div class="center">
+                <!-- 푸터 상단 유틸메뉴 -->
+                <dl class="f-util">
+                    <dt class="hidden">푸터 상단 유팅 메뉴</dt>
+                    <dd><a href="#">원격헬프데스크</a></dd>
+                    <dd><a href="#">국민신문고</a></dd>
+                    <dd><a href="#">클린신고센터</a></dd>
+                    <dd><a href="#">찾아오시는길</a></dd>
+                    <dd><a href="#">누리집이용가이드</a></dd>
+                    <dd><a href="#">뷰어프로그램안내</a></dd>
+                    <dd><a href="#">사이트맵</a></dd>
+                </dl>
+                <!-- 페밀리 사이트 -->
+                <label for="f_site" class="hidden">유관사이트</label>
+                <select name="f_site" id="f_site">
+                    <option>유관사이트</option>
+                    <option value="#">국립세종도서관</option>
+                    <option value="#">국립장애인도서관</option>
+                    <option value="#">문화체육관광부</option>
+                    <option value="#">정부24</option>
+                </select>
+            </div>
+        </div>
+        <!-- 푸터 하단 -->
+        <div class="f-bot center">
+            <div>
+                <!-- 정책 메뉴 -->
+                <dl class="policy">
+                    <dt class="hidden">국립중앙도서관 정책</dt>
+                    <dd><a href="#">개인정보처리방침</a></dd>
+                    <dd><a href="#">국립중앙도서관 윤리강령</a></dd>
+                    <dd><a href="#">도서관법령</a></dd>
+                    <dd><a href="#">이용봉사헌장</a></dd>
+                    <dd><a href="#">사진정보공개</a></dd>
+                    <dd><a href="#">저작권정책</a></dd>
+                </dl>
+                <!-- 주소 -->
+                <address>
+                    <img src="../imgs/index/Logo/Logo.png" alt="국립중앙도서관" title="국립중앙도서관 로고">
+                    <div>
+                        <p>우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</p>
+                        <p>문의전화 02-590-0500 팩스 02-590-0530</p>
+                        <p>Copyright&copy; National Library of Korea. All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
+            <!-- 인증마크 -->
+            <div>
+                <a href="#"><img src="../imgs/index/wa_01.png" alt="웹접근성평가센터 인증마크" title="한국웹접긍성평가센터 홈페이지로 이동(새창)"></a>
+                <a href="#"><img src="../imgs/index/open.jpg" alt="OPEN 공공누리 공공저작물 자유이용허락 로고" title="공공누리|공공저작물 자유이용허락 홈페이지로 이동(새창)"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/search-tap.js"></script>
+</body>
+</html>

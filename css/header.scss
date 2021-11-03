@@ -1,0 +1,146 @@
+// 공통사항과 변수 scss 호출
+@import "_common";
+
+// 헤더
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background:$white;
+    >.hd-top{ // 헤더 상단
+        width:100%;
+        height:80px;
+        >div.center{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >a img{
+                padding: 16px 0;
+            }
+            >div{
+                display: flex;
+                gap: 45px;
+                >dl{ // 헤더 상단 유틸메뉴
+                    display: flex;
+                    gap:20px;
+                    align-items: center;
+                    font-size: $font12;
+                    color: $gray;
+                    >dd >a{
+                        &:hover{
+                            font-weight: 500;
+                            color:$black;
+                        }
+                        >i{ // 폰트어썸 아이콘
+                            padding-right:5px;
+                        }
+                    } 
+                }
+                >form{ // 헤더 검색 버튼 영역
+                    display: flex;
+                    padding:5px 0;
+                    width:200px;
+                    height:26px;
+                    font-size: $font12;
+                    color: $darkGray;
+                    @include border($gray);
+                    >input{
+                        width:172px;
+                        border: none;
+                        outline: none;
+                        padding-left:10px;
+                        &::placeholder{
+                            font-size: $font12;
+                            font-weight: 500;
+                        }
+                    }
+                    >button{
+                        width:26px;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        >i{ // 검색 아이콘
+                            color:$gray;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    >.hd-bottom{ // 헤더 하단
+        position: relative;
+        height:70px;
+        @include border($gray);
+        >nav > .gnb_depth1{ // 메인 네비게이터
+            display: flex;
+            &:hover .gnb_depth2{
+                display: block;
+            }
+            &:hover ~ .depth2_bg{
+                display: block;
+            }
+            >li{ // depth 1
+                position: relative;
+                flex-basis: 20%;
+                text-align: center;
+                &:hover> .gnb_depth2{
+                    background: $lightGray;
+                    border-left: 1px solid $gray;
+                    border-right: 1px solid $gray;
+                }
+                >a{
+                    display: block;
+                    padding: 22px 0;
+                    font-size: $font22;
+                    font-weight: 700;
+                    color:$black;
+                    &:hover{
+                        color:$skyBlue;
+                        border-bottom: 4px solid $skyBlue;
+                    }
+                }
+                .gnb_depth2{ // depth 2
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top:69px;
+                    padding-top:30px;
+                    width:100%;
+                    height:425px;
+                    background: $white;
+                    border-bottom:1px solid $gray;
+                    text-align: center;
+                    z-index: 99;
+                    &:hover{
+                        background: $lightGray;
+                    }
+                    >li{
+                        padding-bottom:24px;
+                        >a{
+                            font-size:$font20;
+                            font-weight: 500;
+                            color:$darkGray;
+                            &:hover{
+                                font-weight: 700;
+                                color:$black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >nav >.depth2_bg{ //depth2 배경
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 425px;
+            top: 69px;
+            left: 0;
+            background: white;
+            border-bottom: 1px solid $gray;
+            z-index: 9;
+        }
+    }
+}

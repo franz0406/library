@@ -1,0 +1,72 @@
+@import "_common";
+
+.contents-m{
+    margin-top: 30px;
+    >div:first-of-type{ // 방문 환영 문구 이미지 영역
+        position: relative;
+        width: 960px;
+        height:350px;
+        background:url(../imgs/about/bg-top.jpg);
+        >div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 720px;
+            height:244px;
+            background: rgba(48,48,48, 0.7);
+            text-align: center;
+            >p{
+                color:$white;
+                &:first-of-type{
+                    padding-top: 55px;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+                &:last-of-type{
+                    padding-top: 30px;
+                    line-height: 40px;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    >div:last-of-type{ // 내용 과 도서관장 이미지 영역
+        margin-top: 40px;
+        display: flex;
+        >div:first-of-type{ // 내용
+            color:$darkGray;
+            line-height: 25px;
+            >p:nth-of-type(1){
+                font-size: $font20;
+                font-weight: 700;
+                >strong{
+                    color:$skyBlue;
+                }
+            }
+            >p >em{
+                font-weight: 700;
+                color:$black;
+            }
+        }
+        >div:last-of-type{ // 도서관장 서혜란 이미지
+            >img:first-of-type{
+                padding-bottom: 60px;
+            }
+            >p{
+                font-size: $font14;
+                color:$darkGray;
+                text-align: right;
+            }
+            >img:last-of-type{
+                display: block;
+                margin-left: auto;
+                padding-top:15px;
+            }
+        }
+    }
+}
+
+main{
+    margin-bottom: 230px;
+}

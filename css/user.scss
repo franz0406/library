@@ -1,0 +1,137 @@
+@import '_common';
+
+.contents-m{
+    margin-top: 50px;
+    color:$black;
+    font-size: $font14;    
+    >div.best5{ // 아코디언 메뉴 공통사항
+        >p{
+            font-weight: 700;
+            padding-bottom: 25px;
+            >span{
+                text-transform: uppercase;
+                color:$skyBlue;
+            }
+        }
+    }
+    dl >dt{
+        padding-left: 60px;
+        line-height: 40px;
+        font-weight: 700;
+        cursor: pointer;
+        &:first-of-type{
+            border-top:1px solid #bfbfbf;
+        }        
+        background: url(../imgs/common/q.png)no-repeat 25px 50%,$white;
+        &.active{
+            color:$skyBlue;
+        }
+    }
+    dl:last-of-type{
+        border-bottom:1px solid #bfbfbf;
+    }
+    dl >dd{
+        display: none;
+        padding:25px 60px;
+        color:$darkGray;
+        line-height: 22px;
+        background: url(../imgs/common/a.png)no-repeat 25px 25px,$lightGray;
+        a{
+            color:$skyBlue;
+            font-weight: 700;
+        }
+        b{
+            font-weight: 700;
+            color:$black;
+        }
+        small{
+            font-size: $font12;
+            line-height: 19px;
+        }
+    }
+    >div.srch-form{ // 검색 폼
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        >p{
+            font-weight: 700;
+            >span{
+                color:$skyBlue;
+            }
+        }
+        >form{
+            display: flex;
+            align-items: center;
+            >select{
+                padding:0 10px;
+                width:72px;
+                height:30px;
+                font-size: $font12;
+                color:$gray;
+                outline: none;
+                border-color: $gray;
+                background: url(../imgs/common/sort_down.png)no-repeat 90% 50%;
+                appearance: none;
+            }
+            >input{
+                margin-left: 15px;
+                padding-left: 10px;
+                width:215px;
+                height:30px;
+                outline: none;
+                &::placeholder{
+                    font-size: $font12;
+                    color:$gray;
+                }
+            }
+            >button{
+                margin-left: -30px;
+                background:$white;
+                border:0 none;
+                outline: none;
+                cursor: pointer;
+                >i{
+                    color:$gray;
+                }
+            }
+        }
+    }
+    >div.paginate{ // 페이저
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        >button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:25px;
+            height:25px;
+            border:1px solid $gray;
+            background: none;
+            cursor: pointer;
+            >i{
+                color:$gray;
+                font-size: $font14;
+            }
+        }
+        >p{
+            padding:0 10px;
+            color:$skyBlue;
+            font-weight: 700;
+            >span:first-of-type{
+                padding:0 5px;
+            }
+            >span:last-of-type{
+                color:$gray;
+            }
+        }
+    }
+}
+
+main{
+    margin-bottom: 230px;
+}

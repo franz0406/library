@@ -1,0 +1,85 @@
+@import '_common';
+
+// 푸터 상단
+footer >.f-top{
+    background-color: $blue;
+    >div.center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >dl{ // 유틸 메뉴
+            display: flex;
+            gap:20px;
+            font-size:$font14;
+            font-weight:500;
+            color:$white;
+            >dd > a{
+                color:$white;
+                &:hover{
+                    font-weight: 700;
+                }
+            }
+        }
+        select{ // 페밀리사이트 샐랙트 버튼
+            width:235px;
+            height:50px;
+            padding:0 20px;
+            font-size:$font14;
+            color:$white;
+            background: url(../imgs/common/arrow_up.png)no-repeat right,$blue;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            outline: none;
+            appearance: none;
+            >option{
+                background: white;
+                color:$black;
+            }
+        }
+    }
+}
+
+// 푸터 하단
+footer >.f-bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div:first-child{
+        >dl{ // 하단 정책 메뉴
+            display: flex;
+            >dd{
+                margin-right: 20px;
+                line-height: 40px;
+                >a{
+                    font-size: $font14;
+                    font-weight: 500;
+                    color:$gray;
+                    &:hover{
+                        font-weight: 700;
+                    }
+                }
+            }
+            >dd:first-of-type >a{
+                color:$red;
+            }
+        }
+        >address{ // 주소
+            display: flex;
+            align-items: center;
+            >img{
+                padding:26px 0;
+                margin-right:75px;
+            }
+            >div >p{
+                padding:4px 0;
+                font-size:$font12;
+                color:$black;
+            }
+        }
+    }
+    >div:last-child{ // 인증마크
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+}

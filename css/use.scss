@@ -1,0 +1,142 @@
+@import '_common';
+
+.contents-m{
+    margin-top: 30px;
+    >div.target{ // 이용대상
+        margin-bottom: 55px;
+        >p{
+            padding-left: 25px;
+            font-size: $font14;
+            line-height: 20px;
+            color:$darkGray;
+            >strong{
+                font-weight: 700;
+                line-height:23px;
+                color:$red;
+            }
+        }
+    }
+    >div.time, div.holyday{ // 운영일시 & 휴관일
+        font-weight: 500;
+        color: $black;
+        line-height: 23px;
+        margin-bottom: 45px;
+        >div{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            p:not(:last-of-type){
+                padding-bottom: 10px;
+            }
+            em{
+                color:$skyBlue;
+            }
+            img{
+                padding-left: 25px;
+            }
+            small{
+                font-size:$font14;
+                font-weight:400;
+                color:$darkGray;
+            }
+            span{
+                color:$red;
+            }
+        }
+    }
+    >div.time p:nth-of-type(3){
+        margin-bottom: 10px;
+    }
+    >div.voucher{ // 이용증 발급
+        >p:first-of-type,
+         p:nth-of-type(2){
+            padding-bottom: 10px;
+            font-size:$font14;
+            line-height: 20px;
+            color:$darkGray;
+            text-indent: 25px;
+        }
+        >table{
+            margin-top: 25px;
+            border-top: 2px solid $blue;
+            border-bottom: 2px solid $blue;
+            >thead{
+                background: $lightGray;
+                th{
+                    font-size:$font14;
+                    font-weight: 700;
+                    line-height: 34px;
+                    color:$black;
+                }
+                th:nth-of-type(1){
+                    width:171px;
+                }
+                th:nth-of-type(2){
+                    width:395px;
+                }
+                th:nth-of-type(3){
+                    width:394px;
+                }
+            }
+            >tbody{
+                font-size:$font14;
+                line-height: 20px;
+                color:$darkGray;
+                td{
+                    padding:15px;
+                    &:nth-last-of-type(2){
+                        border: 2px solid $lightGray;
+                        border-top:0 none;
+                        border-bottom-color: $blue;
+                    }
+                }
+            }            
+        }
+        >p:last-of-type{
+            padding-top: 20px;
+            margin-bottom: 45px;
+            font-size: $font14;
+            font-weight: 700;
+            color:$skyBlue;
+            text-align: center;
+        }
+    }
+    >div.question{ // 문의
+        table{
+            border-top: 2px solid $blue;
+            border-bottom: 2px solid $blue;
+            font-size: $font14;
+            tr:first-of-type{
+                border-bottom:2px solid $lightGray;
+            }
+            th{
+                width:171px;
+                color:$black;                
+                font-weight: 700;
+                background: $lightGray;
+                vertical-align: middle;
+            }
+            td{
+                padding:15px;
+                &:first-of-type{
+                    width:638px;
+                }
+                &:last-of-type{
+                    width:151px;
+                }
+            }
+            span{
+                display: block;
+                line-height: 20px;
+                color:$darkGray;
+                &:first-of-type{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    margin-bottom: 230px;
+}

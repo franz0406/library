@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/use.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>국립중앙도서관</title>
+</head>
+<body>
+    <!-- 본문 바로가기 링크 -->
+    <a href="#main_contents" class="skip">본문 바로가기</a>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1 class="hidden">문화체육관광부 국립중앙도서관</h1>
+        <!-- 헤더 상단 -->
+        <div class="hd-top">
+            <div class="center">
+                <a href="../index.html"><img src="../imgs/index/Logo/Logo.png" alt="국립중앙도서관 로고 이미지"></a>
+                <div>
+                    <!-- 상단 유팅메뉴 -->
+                    <dl>
+                        <dt class="hidden">상단 유틸메뉴</dt>
+                        <dd><a href="#"><i class="fas fa-home"></i>처음으로</a></dd>
+                        <dd><a href="#"><i class="fas fa-sign-in-alt"></i>로그인</a></dd>
+                        <dd><a href="#" target="_blank" title="새창열림 - 회원가입서비스"><i class="fas fa-user"></i>회원가입</a></dd>
+                        <dd><a href="#"><i class="fas fa-sitemap"></i>사이트맵</a></dd>
+                    </dl>
+                    <!-- 상단 검색 영역 -->
+                    <form action="#">
+                        <label for="h-srch" class="hidden">검색어를입력하세요</label>
+                        <input type="text" id="h-srch" name="h-srch" placeholder="검색어를 입력하세요">
+                        <button type="button"><i class="fas fa-search"></i><span class="hidden">검색하기</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 헤더 하단 -->
+        <div class="hd-bottom">
+            <!-- gnb -->
+            <nav class="center">
+                <h2 class="hidden">국립중앙도서관 메인메뉴</h2>
+                <div></div>
+                <ul class="gnb_depth1">
+                    <li>
+                        <a href="../html/about.html">도서관소개</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">도서관연헉</a></li>
+                            <li><a href="#">시설현황</a></li>
+                            <li><a href="#">도서관조직도</a></li>
+                            <li><a href="#">이용서비스헌장</a></li>
+                            <li><a href="#">도서관규정</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/use.html">도서관이용</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">집에서 이용하는 도서관</a></li>
+                            <li><a href="#">본관 자료실안내</a></li>
+                            <li><a href="#">디지털 도서관안내</a></li>
+                            <li><a href="#">대출증 발급안내</a></li>
+                            <li><a href="#">편의시설</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/user.html">이용자마당</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">설문조사</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">영상뉴스</a></li>
+                            <li><a href="#">건의사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/books.html">도서정보</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자료검색</a></li>
+                            <li><a href="#">사서 추천도서</a></li>
+                            <li><a href="#">신착자료</a></li>
+                            <li><a href="#">영상자료</a></li>
+                            <li><a href="#">국가자료종합목록</a></li>
+                            <li><a href="#">국가전자도서관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/events.html">신청·참여</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">책다모아(기증)</a></li>
+                            <li><a href="#">자료신청안내</a></li>
+                            <li><a href="#">도서관견학</a></li>
+                            <li><a href="#">도서관예약</a></li>
+                            <li><a href="#">교육/문화프로그램</a></li>
+                            <li><a href="#">사회봉사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="depth2_bg"></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main id="main_contents">
+        <h2 class="hidden">도서관이용 메인 콘텐츠</h2>
+        <!-- 메인 상단 콘텐츠 제목 영역 -->
+        <div class="main-header">
+            <img src="../imgs/common/library_text.png" alt="국립중앙도서관 대한민국 지식을 모으고,담고,잇다">
+            <div>
+                <div class="center">
+                    <h3>도서관이용</h3>
+                    <img src="../imgs/common/share_icon.png" alt="공유아이콘">
+                    <img src="../imgs/common/print_icon.png" alt="프린터아이콘">
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <section class="contents center">
+            <h2 class="hidden">도서관이용</h2>
+            <!-- 로컬 네비게이터 -->
+            <nav class="lnb">
+                <h3>도서관이용</h3>
+                <ul>
+                    <li class="active"><a href="#">이용안내</a></li>
+                    <li><a href="#">집에서 이용하는 도서관</a></li>
+                    <li><a href="#">본관 자료실안내</a></li>
+                    <li><a href="#">디지털 도서관안내</a></li>
+                    <li><a href="#">대출증 발급안내</a></li>
+                    <li><a href="#">편의시설</a></li>
+                </ul>
+            </nav>
+            <!-- 컨텐츠 내용 영역 -->
+            <div>
+                <!-- 컨텐츠 내용 헤더 -->
+                <div class="contents-h">
+                    <h4>이용안내</h4>
+                    <span><a href="#"><i class="fas fa-home"></i></a> &gt; 도서관이용 &gt; 이용안내</span>
+                </div>
+                <!-- 내용 -->
+                <div class="contents-m">
+                    <div class="target">
+                        <h5>이용대상</h5>                        
+                        <p><strong>※ 코로나19 확산 방지로 인한 자료실 및 이용증발급실 운영 시간: 10:00~17:00  (자료 당일신청 10:00~16:00)</strong></p>
+                        <br>
+                        <p>정보이용 · 조사 · 연구 등을 목적으로 소장 도서관자료를 이용하고자 하는 만 16세 이상인 자<br>단, 만 16세 미만(초등학생 이하 제외)인 자가 조사 · 연구를 목적으로 도서관을 방문하였을 경우 「청소년 자료이용 신청서」작성 후 출입 가능(학생증, 청소년증 등 본인확인이 가능한 신분증 지참)</p>
+                    </div>
+                    <div class="time">
+                        <h5>운영일시</h5>
+                        <div>
+                            <img src="../imgs/common/icon_time.png" alt="시계 아이콘 이미지">
+                            <div>
+                                <p><em>주간이용</em></p>
+                                <p>월요일 ~ 일요일 09:00 ~ 18:00</p>
+                                <p>(자료신청 09:00 ~ 17:00)</p>
+                                <p><em>야간이용</em></p>
+                                <p>이용시간: 18:00~21:00 (월~금, 휴관일 제외)</p>
+                                <p><small>※ 자료실 자료 정배열 및 장비점검 등 다음날 서비스 준비를 위해 주말(토/일)에는 야간도서관을 운영하지 않습니다.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="holyday">
+                        <h5>휴관일</h5>
+                        <div>
+                            <img src="../imgs/common/icon_calendar.png" alt="달력 아이콘 이미지">
+                            <div>
+                                <p>정기 휴관 :  매월 둘째 · 넷째 월요일</p>
+                                <p>일요일을 제외한 관공서의 공휴일</p>
+                                <p><span>※ 설 연휴와 추석 연휴 기간 중의 일요일은 휴관</span></p>
+                                <p>기타 관장이 필요하다고 인정하는 날</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voucher">
+                        <h5>이용증 발급</h5>
+                        <p>이용증은 국립중앙도서관 본관과 디지털도서관 공통으로 이용</p>
+                        <p>I-PIN 또는 휴대폰을 통한 본인인증 없이 회원가입을 원하는 경우 본인 신분증을 소지하고 도서관에 방문하여 이용증 발급 가능</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">일일 이용증</th>
+                                    <th scope="col">정기 이용증</th>
+                                    <th scope="col">모바일 이용증</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1일 사용후 반납</td>
+                                    <td>
+                                        유효기간 내에 계속 사용<br>
+                                        유효기간 : 마지막 이용일로부터 5년<br>
+                                        <br>
+                                        정기 이용증을 직접 수령하기 어려운 경우 대리인이 위임장, 신청인 신분증, 대리인 신분증(또는 사본)을 지참한 후 이용증 발급실에서 대리 수령 가능
+                                    </td>
+                                    <td>
+                                        회원가입 후 발급실 방문없이 모바일을 통하여 즉시 발급<br>일일이용증 및 정기이용증 사용자도 모바일 이용증 발급 가능<br>
+                                        <br>
+                                        유효기간 : 마지막 이용일로부터 5년<br>
+                                        이용 가능 서비스 : 도서관 입·출입, 외출, 관내대출반납, 야간도서관 이용
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>이용증 발급실 운영시간 : 08:30 ~ 18:00</p>
+                    </div>
+                    <div class="question">
+                        <h5>문의</h5>
+                        <table>
+                            <tr>
+                                <th scope="row">종합안내</th>
+                                <td>
+                                    <span>종합안내	(1층 안내데스크) 회원가입, 이용증 발급, 도서관 위치, 주차, 물품 보관</span>
+                                    <span>국립중앙도서관 야간도서관</span>
+                                </td>
+                                <td>
+                                    <span>(02)590-0513~4</span>
+                                    <span>(02)590-0602</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">자료상담</th>
+                                <td>
+                                    <span>(4층 도서자료실) 단행자료 및 야간도서관 이용</span>
+                                    <span>(3층 연속간행물실) 잡지·신문·공공간행물 이용</span>
+                                </td>
+                                <td>
+                                    <span>(02)590-0586</span>
+                                    <span>(02)590-0587</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 역역 -->
+    <footer>
+        <h2 class="hidden">국립중앙도서관 하단 푸터 콘탠츠</h2>
+        <!-- 푸터 상단 -->
+        <div class="f-top">
+            <div class="center">
+                <!-- 푸터 상단 유틸메뉴 -->
+                <dl class="f-util">
+                    <dt class="hidden">푸터 상단 유팅 메뉴</dt>
+                    <dd><a href="#">원격헬프데스크</a></dd>
+                    <dd><a href="#">국민신문고</a></dd>
+                    <dd><a href="#">클린신고센터</a></dd>
+                    <dd><a href="#">찾아오시는길</a></dd>
+                    <dd><a href="#">누리집이용가이드</a></dd>
+                    <dd><a href="#">뷰어프로그램안내</a></dd>
+                    <dd><a href="#">사이트맵</a></dd>
+                </dl>
+                <!-- 페밀리 사이트 -->
+                <label for="f_site" class="hidden">유관사이트</label>
+                <select name="f_site" id="f_site">
+                    <option>유관사이트</option>
+                    <option value="#">국립세종도서관</option>
+                    <option value="#">국립장애인도서관</option>
+                    <option value="#">문화체육관광부</option>
+                    <option value="#">정부24</option>
+                </select>
+            </div>
+        </div>
+        <!-- 푸터 하단 -->
+        <div class="f-bot center">
+            <div>
+                <!-- 정책 메뉴 -->
+                <dl class="policy">
+                    <dt class="hidden">국립중앙도서관 정책</dt>
+                    <dd><a href="#">개인정보처리방침</a></dd>
+                    <dd><a href="#">국립중앙도서관 윤리강령</a></dd>
+                    <dd><a href="#">도서관법령</a></dd>
+                    <dd><a href="#">이용봉사헌장</a></dd>
+                    <dd><a href="#">사진정보공개</a></dd>
+                    <dd><a href="#">저작권정책</a></dd>
+                </dl>
+                <!-- 주소 -->
+                <address>
+                    <img src="../imgs/index/Logo/Logo.png" alt="국립중앙도서관" title="국립중앙도서관 로고">
+                    <div>
+                        <p>우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</p>
+                        <p>문의전화 02-590-0500 팩스 02-590-0530</p>
+                        <p>Copyright&copy; National Library of Korea. All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
+            <!-- 인증마크 -->
+            <div>
+                <a href="#"><img src="../imgs/index/wa_01.png" alt="웹접근성평가센터 인증마크" title="한국웹접긍성평가센터 홈페이지로 이동(새창)"></a>
+                <a href="#"><img src="../imgs/index/open.jpg" alt="OPEN 공공누리 공공저작물 자유이용허락 로고" title="공공누리|공공저작물 자유이용허락 홈페이지로 이동(새창)"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import '_common';
+
+.contents-m{
+    margin-top: 25px;
+    >img{
+        margin-bottom: 45px;
+    }
+    p{ // 텍스트 공통 사항
+        padding-left: 25px;
+        color:$darkGray;
+        font-size: $font14;
+        line-height: 22px;
+    }
+    .donate-book{ // 기증취지
+        margin-bottom: 45px;
+        strong{
+            font-size:$font16;
+            font-weight: 700;
+            line-height: 0;
+            color:$black;
+        }
+    }
+    .donate-info{ // 기증안내
+        margin-bottom: 45px;
+        b{
+            font-size: $font22;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        span{
+            position: relative;
+            padding-left: 20px;
+            display: block;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width:4px;
+                height:4px;
+                background: $red;
+                border-radius: 50%;
+            }
+        }
+        em{
+            color:$skyBlue;
+            font-weight: 700;
+        }
+    }
+    .send-address{ // 보내실 곳
+        >p:first-of-type{
+            padding-bottom: 12px;
+        }
+        b{
+            padding-right: 10px;
+            font-weight: 700;
+        }
+        span:first-of-type{
+            padding-right: 30px;
+        }
+    }
+}
+
+main{
+    margin-bottom: 230px;
+}

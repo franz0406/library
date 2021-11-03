@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imgs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>국립중앙도서관</title>
+</head>
+<body>
+    <!-- 본문 바로가기 링크 -->
+    <a href="#main_contents" class="skip">본문 바로가기</a>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1 class="hidden">문화체육관광부 국립중앙도서관</h1>
+        <!-- 헤더 상단 -->
+        <div class="hd-top">
+            <div class="center">
+                <a href="index.html"><img src="imgs/index/Logo/Logo.png" alt="국립중앙도서관 로고 이미지"></a>
+                <div>
+                    <!-- 상단 유팅메뉴 -->
+                    <dl>
+                        <dt class="hidden">상단 유틸메뉴</dt>
+                        <dd><a href="#"><i class="fas fa-home"></i>처음으로</a></dd>
+                        <dd><a href="#"><i class="fas fa-sign-in-alt"></i>로그인</a></dd>
+                        <dd><a href="#" target="_blank" title="새창열림 - 회원가입서비스"><i class="fas fa-user"></i>회원가입</a></dd>
+                        <dd><a href="#"><i class="fas fa-sitemap"></i>사이트맵</a></dd>
+                    </dl>
+                    <!-- 상단 검색 영역 -->
+                    <form action="#">
+                        <label for="h-srch" class="hidden">검색어를입력하세요</label>
+                        <input type="text" id="h-srch" name="h-srch" placeholder="검색어를 입력하세요">
+                        <button type="button"><i class="fas fa-search"></i><span class="hidden">검색하기</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 헤더 하단 -->
+        <div class="hd-bottom">
+            <!-- gnb -->
+            <nav class="center">
+                <h2 class="hidden">국립중앙도서관 메인메뉴</h2>
+                <div></div>
+                <ul class="gnb_depth1">
+                    <li>
+                        <a href="html/about.html">도서관소개</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">도서관연헉</a></li>
+                            <li><a href="#">시설현황</a></li>
+                            <li><a href="#">도서관조직도</a></li>
+                            <li><a href="#">이용서비스헌장</a></li>
+                            <li><a href="#">도서관규정</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/use.html">도서관이용</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">집에서 이용하는 도서관</a></li>
+                            <li><a href="#">본관 자료실안내</a></li>
+                            <li><a href="#">디지털 도서관안내</a></li>
+                            <li><a href="#">대출증 발급안내</a></li>
+                            <li><a href="#">편의시설</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/user.html">이용자마당</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">설문조사</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">영상뉴스</a></li>
+                            <li><a href="#">건의사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/books.html">도서정보</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">자료검색</a></li>
+                            <li><a href="#">사서 추천도서</a></li>
+                            <li><a href="#">신착자료</a></li>
+                            <li><a href="#">영상자료</a></li>
+                            <li><a href="#">국가자료종합목록</a></li>
+                            <li><a href="#">국가전자도서관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html/events.html">신청·참여</a>
+                        <ul class="gnb_depth2">
+                            <li><a href="#">책다모아(기증)</a></li>
+                            <li><a href="#">자료신청안내</a></li>
+                            <li><a href="#">도서관견학</a></li>
+                            <li><a href="#">도서관예약</a></li>
+                            <li><a href="#">교육/문화프로그램</a></li>
+                            <li><a href="#">사회봉사</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="depth2_bg"></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main id="main_contents">
+        <h2 class="hidden">국립중앙도서관 메인콘텐츠</h2>
+        
+        <!-- 메인 상단 배너 영역(슬라이더, 달력, 휴관일) -->
+        <section class="top-banner">
+            <h2>대한민국 지식을 모으고,담고,잇다</h2>
+            <div class="center">
+                <!-- 슬라이더 -->
+                <div class="notice-slider">
+                    <h3>소식알림</h3>
+                    <div class="notice-slide">
+                        <ul>
+                            <li><a href="#"><img src="imgs/index/main_slide_01.png" alt="집에서도 이용할 수 있는 온라인 자료 안내 바로가기 이미지"></a></li>
+                            <li><a href="#"><img src="imgs/index/main_slide_02.png" alt="세상을 바꾼 기록이야기 바로가기 이미지"></a></li>
+                            <li><a href="#"><img src="imgs/index/main_slide_03.png" alt="그때. 그 시절 여성과 청년을 알다 바로가기 이미지"></a></li>
+                            <li><a href="#"><img src="imgs/index/main_slide_04.png" alt="도서관에서 보내는 그림편지 바로가기 이미지"></a></li>
+                        </ul>
+                    </div>
+                    <div class="notice-slide-pagination">
+                        <ul>
+                            <li class="active"><a href="#"><span class="hidden">1</span></a></li>
+                            <li><a href="#"><span class="hidden">2</span></a></li>
+                            <li><a href="#"><span class="hidden">3</span></a></li>
+                            <li><a href="#"><span class="hidden">4</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 휴관일 달력 이미지 -->
+                <img src="imgs/index/calendar.jpg" alt="10월 휴관일 이미지">
+                <!-- 휴관일 안내 -->
+                <div class="holyday">
+                    <h3>이달의 휴관일 안내</h3>
+                    <div class="holyday-list">
+                        <ul>
+                            <li>
+                                <span>휴관일</span>
+                                <span>2021-10-04<br>대체 공휴일</span>
+                            </li>
+                            <li>
+                                <span>휴관일</span>
+                                <span>2021-10-09<br>한글날</span>
+                            </li>
+                            <li>
+                                <span>휴관일</span>
+                                <span>2021-10-11<br>정기 휴관일</span>
+                            </li>
+                            <li>
+                                <span>휴관일</span>
+                                <span>2021-10-25<br>정기 휴관일</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>도서관 개관 시간은 10:00 ~ 17:00 입니다.</p>
+                    <p>매월 둘째, 넷째 월요일은 본관 및 디지털 도서관 정기 휴관일입니다.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- lnb -->
+        <nav class="center">
+            <h2 class="hidden">자주이용하는 메뉴 리스트</h2>
+            <ul>
+                <li><a href="#" title="자료신청"><img src="imgs/index/icons/icon_01.png" alt="자료신청"><span>자료신청</span></a></li>
+                <li><a href="#" title="방문예약"><img src="imgs/index/icons/icon_02.png" alt="방문예약"><span>방문예약</span></a></li>
+                <li><a href="#" title="디지털도서관예약"><img src="imgs/index/icons/icon_03.png" alt="디지털도서관예약"><span>디지털도서관예약</span></a></li>
+                <li><a href="#" title="온라인견학"><img src="imgs/index/icons/icon_04.png" alt="온라인견학"><span>온라인견학</span></a></li>
+                <li><a href="#" title="이용자교육"><img src="imgs/index/icons/icon_05.png" alt="이용자교육"><span>이용자교육</span></a></li>
+                <li><a href="#" title="편의시설"><img src="imgs/index/icons/icon_06.png" alt="편의시설"><span>편의시설</span></a></li>
+                <li><a href="#" title="찾아오시는길"><img src="imgs/index/icons/icon_07.png" alt="찾아오시는길"><span>찾아오시는길</span></a></li>
+                <li><a href="#" title="설정"><img src="imgs/index/icons/icon_08.png" alt="설정"><span>설정</span></a></li>
+            </ul>
+        </nav>
+        
+        <!-- 주제별 컬렉션 영역 -->
+        <section class="collection">
+            <h2>주제별 컬렉션</h2>
+            <div class="center">
+                <div class="collect-slider">
+                    <ul>
+                        <li><a href="#"><img src="imgs/index/sub_slide_01.png" alt="디지털 도서관 10년, 여정을 기록하다!"></a></li>
+                        <li><a href="#"><img src="imgs/index/sub_slide_02.png" alt="국민건강보험의 역사와 미래"></a></li>
+                        <li><a href="#"><img src="imgs/index/sub_slide_03.png" alt="재외 동포재단 컬렉션"></a></li>
+                        <li><a href="#"><img src="imgs/index/sub_slide_04.png" alt="장벽을 넘어 해방으로, 여성 독립운동가의 생애"></a></li>
+                        <li><a href="#"><img src="imgs/index/sub_slide_05.png" alt="사진으로 보는 국립중앙도서관 발자취"></a></li>
+                        <li><a href="#"><img src="imgs/index/sub_slide_06.png" alt="전염병과 조선의 의서"></a></li>
+                    </ul>
+                </div>
+                <p class="prev"><i class="fas fa-chevron-left"></i><span class="hidden">이전 컬렉션</span></p>
+                <p class="next"><i class="fas fa-chevron-right"></i><span class="hidden">다음 컬렉션</span></p>
+                <a href="#"><span>더보기</span><i class="fas fa-plus-square"></i></a>
+            </div>
+        </section>
+        
+        <!-- 국립중앙도서관 실감서재 개관 배너 영역 -->
+        <aside class="survey center">
+            <h2 class="hidden">국립중앙도서관 실감서재 개관</h2>
+            <a href="#"><img src="imgs/index/bg_mid.png" alt="국립중앙도서관 실감서재 개관 바로가기"></a>
+        </aside>
+        
+        <!-- 국립중앙도서관 정보 탭 메뉴 영역 -->
+        <section class="inform">
+            <h2 class="hidden">국립중앙도서관 주요 정보 안내</h2>
+            <div class="center">
+                <!-- 공지사항 및 행사 인재채용 탭 메뉴 영역 -->
+                <section class="notice">
+                    <h3 class="hidden">공지사항 및 행사 인재채용 안내</h3>
+                    <!-- 탭 제목 리스트 -->
+                    <ul class="notice-tap-list">
+                        <li class="active"><a href="#">공지사항</a></li>
+                        <li><a href="#">행사안내</a></li>
+                        <li><a href="#">인재채용</a></li>
+                    </ul>
+                    <!-- 탭 내용 리스트 1 -->
+                    <div class="taps active">
+                        <ul>
+                            <li><a href="#">본관 열린마당 서가 인테리어 공사기간 변경 알림<time datetime="2021-10-21">2021-10-21</time></a></li>
+                            <li><a href="#">비치희망 외국자료 신청 마감 안내<time datetime="2021-10-15">2021-10-15</time></a></li>
+                            <li><a href="#">[ 제15회 ] 도서관 혁신 아이디어 및 우수 현장사례 공모 심사결과<time datetime="2021-10-08">2021-10-08</time></a></li>
+                            <li><a href="#">국립중앙도서관  [ 디지털컬렉션 ] 퀴즈 이벤트 당첨자 발표<time datetime="2021-09-06">2021-09-06</time></a></li>
+                            <li><a href="#">[ 러시아 대통령도서관 소장 한국 관련 자료 목록 및 해제집 ] 발간 안내<time datetime="2021-08-27">2021-08-27</time></a></li>
+                            <li><a href="#">본관 및 디지털관 인테리어 공사 알림<time datetime="2021-08-12">2021-08-12</time></a></li>
+                            <li><a href="#">월드라이브러리(World Library)  이용만족도 설문조사 당첨자 발표<time datetime="2021-08-22">2021-08-22</time></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                    <!-- 탭 내용 리스트 2 -->
+                    <div class="taps">
+                        <ul>
+                            <li><a href="#">국립중앙도서관 개관 76주년 기념 협력세미나 안내<time datetime="2021-10-20">2021-10-20</time></a></li>
+                            <li><a href="#">국립중앙도서관 개관 76주년 기념 행사 개최<time datetime="2021-10-14">2021-10-14</time></a></li>
+                            <li><a href="#">「근대, 그 시절 여성과 청년을 읽다」 기획 전시<time datetime="2021-09-23">2021-09-23</time></a></li>
+                            <li><a href="#">국가전자도서관 「오류신고&개선제안」 이벤트 안내<time datetime="2021-09-16">2021-09-16</time></a></li>
+                            <li><a href="#">국립중앙도서관 「디지털컬렉션」 퀴즈 이벤트<time datetime="2021-07-28">2021-07-28</time></a></li>
+                            <li><a href="#">[이벤트] 국립중앙도서관 「실감서재」 & 「미래 도서관 특별전」 당첨자 발표<time datetime="2021-06-04">2021-06-04</time></a></li>
+                            <li><a href="#">[이벤트] 디지털도서관 미디어창작실 방문하고 선물 받자!<time datetime="2021-05-31">2021-05-31</time></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                    <!-- 탭 내용 리스트 3 -->
+                    <div class="taps">
+                        <ul>
+                            <li><a href="#">공지 국립중앙도서관 사서직 경력경쟁채용시험 필기시험 범위 공고<time datetime="2021-10-06">2021-10-06</time></a></li>
+                            <li><a href="#">국립중앙도서관 공무직 근로자 채용 서류전형(1차) 합격자 발표 계획 공고<time datetime="2021-10-22">2021-10-22</time></a></li>
+                            <li><a href="#">국립중앙도서관 공무직 근로자 채용 변경공고<time datetime="2021-10-12">2021-10-12</time></a></li>
+                            <li><a href="#">국립중앙도서관 공무직 근로자 채용 공고<time datetime="2021-10-06">2021-10-06</time></a></li>
+                            <li><a href="#">2021년 국립중앙도서관 사서직 경력경쟁채용시험 미실시 알림<time datetime="2021-10-06">2021-10-06</time></a></li>
+                            <li><a href="#">국립중앙도서관 청원경찰 채용 최종합격자 공고<time datetime="2021-09-29">2021-09-29</time></a></li>
+                            <li><a href="#">국립중앙도서관 기간제 근로자 채용 최종 합격자 공고<time datetime="2021-09-23">2021-09-23</time></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                </section>
+                <!-- 뉴스 영역 -->
+                <section class="news">
+                    <h3 class="hidden">국립중앙도서관 뉴스</h3>
+                    <!-- 탭 제목 리스트 -->
+                    <ul class="news-tap-list">
+                        <li class="active"><a href="#">포토뉴스</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">영상뉴스</a></li>
+                    </ul>
+                    <!-- 탭 내용 리스트 1 -->
+                    <div class="taps active">
+                        <ul>
+                            <li><a href="#"><img src="imgs/index/news_01.jpg" alt="2021-10-20 한양조씨대종회 소장 고문헌 기증"><span>2021-10-20 한양조씨대종회 소장 고문헌 기증</span></a></li>
+                            <li><a href="#"><img src="imgs/index/news_02.jpg" alt="2021-10-07 국내 최초 개인용 컴퓨터를 기증"><span>2021-10-07 국내 최초 개인용 컴퓨터를 기증</span></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                    <!-- 탭 내용 리스트 2 -->
+                    <div class="taps">
+                        <ul>
+                            <li><a href="#"><img src="imgs/index/news_release_01.jpg" alt="북튜버에 도전하고 싶다면 1인 미디어 아카데미로!"><span>북튜버에 도전하고 싶다면 1인 미디어 아카데미로!</span></a></li>
+                            <li><a href="#"><img src="imgs/index/news_release_02.jpg" alt="금속활자로 인쇄한 책이 얼마나 전해질까?"><span>금속활자로 인쇄한 책이 얼마나 전해질까?</span></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                    <!-- 탭 내용 리스트 3 -->
+                    <div class="taps">
+                        <ul>
+                            <li><a href="#"><img src="imgs/index/video_news_01.jpg" alt="국립중앙도서관 고문헌이야기 2 금속활자의 나라 '한국'"><span>국립중앙도서관 고문헌이야기 2 금속활자의 나라 '한국'</span></a></li>
+                            <li><a href="#"><img src="imgs/index/video_news_02.jpg" alt="책과 함께 사색 여행해요, 이달의 사서추천도서"><span>책과 함께 사색 여행해요, 이달의 사서추천도서</span></a></li>
+                        </ul>
+                        <a href="#" class="more-info">더보기<i class="fas fa-plus-square"></i></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- 국립중앙도서관 도서안내 영역 -->
+        <section class="books-info">
+            <h2 class="hidden">국립중앙도서관 도서안내</h2>
+            <div class="center">
+                <img src="imgs/index/bg_bottom.jpg" alt="도서안내 배경 이미지">
+                <div class="books-tap-menu">
+                    <!-- 도서안내 텝 메뉴 제목 -->
+                    <ul class="books-tap-list">
+                        <li class="active"><a href="#">사서추천도서</a><i class="fas fa-angle-right"></i></li>
+                        <li><a href="#">책읽어주는 도서관</a><i class="fas fa-angle-right"></i></li>
+                    </ul>
+                    <!-- 텝 메뉴 1-->
+                    <div class="books-taps active">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/recommend_01.jpg" alt="아티스트 인사이드 책 이미지">
+                                    <span class="book-title">내 안에 잠든 사유를 깨우는 아티스트 인사이드</span>
+                                    <span class="author">정인호</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/recommend_02.jpg" alt="하란사 책 이미지">
+                                    <span class="book-title">하란사</span>
+                                    <span class="author">권비영</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/recommend_03.jpg" alt="허수아비 일기 책 이미지">
+                                    <span class="book-title">허수아비 일기</span>
+                                    <span class="author">싼마오</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/recommend_04.jpg" alt="넥스트 그린 레볼루션 책 이미지">
+                                    <span class="book-title">넥스트 그린 레볼루션</span>
+                                    <span class="author">조원경</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/recommend_05.jpg" alt="지속 가능한 여행을 하고 있습니다 책 이미지">
+                                    <span class="book-title">지속 가능한 여행을 하고 있습니다</span>
+                                    <span class="author">홀리 터펜</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 텝 메뉴 2 -->
+                    <div class="books-taps">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/readbook_01.jpg" alt="멈추어 사랑하라 책 이미지">
+                                    <span class="book-title">멈추어 사랑하라</span>
+                                    <span class="author">오음원작</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/readbook_02.jpg" alt="나의작은 결혼식 책 이미지">
+                                    <span class="book-title">나의작은 결혼식</span>
+                                    <span class="author">김민정 원작</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/readbook_03.jpg" alt="사장의 선택 책 이미지">
+                                    <span class="book-title">사장의 선택</span>
+                                    <span class="author">전혜림, 김흥원작</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/readbook_04.jpg" alt="하루 10분 엄마의 인문학 습관 책 이미지">
+                                    <span class="book-title">하루 10분 엄마의 인문학 습관</span>
+                                    <span class="author">한귀은 원작</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imgs/index/readbook_05.jpg" alt="진짜 인생 공부 책 이미지">
+                                    <span class="book-title">진짜 인생 공부</span>
+                                    <span class="author">조경애 원작</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 메인 하단 배너 리스트 영역 -->
+        <aside class="promotion center">
+            <a href="#"><img src="imgs/index/banner_bot_01.png" alt="모아진 전자잡지 배너 이미지"></a>
+            <a href="#"><img src="imgs/index/banner_bot_02.png" alt="월드라이브러리 배너 이미지"></a>
+            <a href="#"><img src="imgs/index/banner_bot_03.png" alt="나의책 나의 인문기행 배너 이미지"></a>
+            <a href="#"><img src="imgs/index/banner_bot_04.png" alt="도서관 미래공방 배너 이미지"></a>
+        </aside>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <h2 class="hidden">국립중앙도서관 하단 푸터 콘탠츠</h2>
+        <!-- 푸터 상단 -->
+        <div class="f-top">
+            <div class="center">
+                <!-- 푸터 상단 유틸메뉴 -->
+                <dl class="f-util">
+                    <dt class="hidden">푸터 상단 유팅 메뉴</dt>
+                    <dd><a href="#">원격헬프데스크</a></dd>
+                    <dd><a href="#">국민신문고</a></dd>
+                    <dd><a href="#">클린신고센터</a></dd>
+                    <dd><a href="#">찾아오시는길</a></dd>
+                    <dd><a href="#">누리집이용가이드</a></dd>
+                    <dd><a href="#">뷰어프로그램안내</a></dd>
+                    <dd><a href="#">사이트맵</a></dd>
+                </dl>
+                <!-- 페밀리 사이트 -->
+                <label for="f_site" class="hidden">유관사이트</label>
+                <select name="f_site" id="f_site">
+                    <option>유관사이트</option>
+                    <option value="#">국립세종도서관</option>
+                    <option value="#">국립장애인도서관</option>
+                    <option value="#">문화체육관광부</option>
+                    <option value="#">정부24</option>
+                </select>
+            </div>
+        </div>
+        <!-- 푸터 하단 -->
+        <div class="f-bot center">
+            <div>
+                <!-- 정책 메뉴 -->
+                <dl class="policy">
+                    <dt class="hidden">국립중앙도서관 정책</dt>
+                    <dd><a href="#">개인정보처리방침</a></dd>
+                    <dd><a href="#">국립중앙도서관 윤리강령</a></dd>
+                    <dd><a href="#">도서관법령</a></dd>
+                    <dd><a href="#">이용봉사헌장</a></dd>
+                    <dd><a href="#">사진정보공개</a></dd>
+                    <dd><a href="#">저작권정책</a></dd>
+                </dl>
+                <!-- 주소 -->
+                <address>
+                    <img src="imgs/index/Logo/Logo.png" alt="국립중앙도서관" title="국립중앙도서관 로고">
+                    <div>
+                        <p>우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</p>
+                        <p>문의전화 02-590-0500 팩스 02-590-0530</p>
+                        <p>Copyright&copy; National Library of Korea. All rights reserved.</p>
+                    </div>
+                </address>
+            </div>
+            <!-- 인증마크 -->
+            <div>
+                <a href="#"><img src="imgs/index/wa_01.png" alt="웹접근성평가센터 인증마크" title="한국웹접긍성평가센터 홈페이지로 이동(새창)"></a>
+                <a href="#"><img src="imgs/index/open.jpg" alt="OPEN 공공누리 공공저작물 자유이용허락 로고" title="공공누리|공공저작물 자유이용허락 홈페이지로 이동(새창)"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- 스크립트 -->
+    <script src="js/topbanner_slide.js"></script>
+    <script src="js/collect_slide.js"></script>
+    <script src="js/tapmenu.js"></script>
+</body>
+</html>
