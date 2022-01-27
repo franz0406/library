@@ -3,7 +3,9 @@
 ### https://franz0406.github.io/library/
 
 ---
-**Vanilla Javascript Slider**
+```
+메인 페이지 슬라이드 순수 자바스크립트 작성
 탭 메뉴 및 아코디언 활용
 테이블 구조 활용
+```
 
